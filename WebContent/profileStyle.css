@@ -1,0 +1,98 @@
+body {
+  background-color: #b3e5fc;
+  border-radius: 10px;
+}
+
+.addAnsInput {
+  text-align: left;
+  padding: 0.4em;
+  width: 400px;
+  height: 200px;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0.4em;
+  padding-right: 0.4em;
+  /* style="font-size: 12pt; height:100px; width:200px; overflow-x: scroll;"  */
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.card {
+  border: 2px solid purple;
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.stats {
+  background: #f2f5f8 !important;
+  color: #000 !important;
+}
+
+.articles {
+  font-size: 12px;
+  color: #a1aab9;
+}
+
+.number1 {
+  font-weight: 500;
+}
+
+.followers {
+  font-size: 12px;
+  color: #a1aab9;
+}
+
+.number2 {
+  font-weight: 500;
+}
+
+.rating {
+  font-size: 12px;
+  color: #a1aab9;
+}
+
+.number3 {
+  font-weight: 500;
+}
+
+#balheader {
+  border-bottom: 2px solid #a1aab9;
+  text-align: center;
+  color: rgb(45, 106, 134);
+}
+
+.coins {
+  padding-left: 3px;
+}
+
+#bitcoinimg {
+  object-fit: cover;
+  border-radius: 50%;
+}

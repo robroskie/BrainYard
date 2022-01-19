@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+    app:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: cosc304-java
+        depends_on:
+            - db
+        container_name: Brainyard
+        volumes:
+            - ./WebContent:/usr/local/tomcat/webapps/shop/
+        networks:
+            shop-network:
+                aliases:
+                    - Brainyard
+        ports:
+            - 80:8080
+    db:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        container_name: mssql-lab7
+        restart: always
+        environment:
+            ACCEPT_EULA: 'Y'
+            SA_PASSWORD: 'YourStrong@Passw0rd'
+            MYSQL_DATABASE: "aviDB"
+        ports:
+            - '1433:1433'
+        expose:
+            - '1433'
+        volumes:
+            - cosc304-db:/var/lib/mssql
+        networks:
+            shop-network:
+                aliases:
+                    - cosc304-db
+volumes: 
+    cosc304-db:
+networks:
+    shop-network:
